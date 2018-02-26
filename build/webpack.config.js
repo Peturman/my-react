@@ -73,6 +73,7 @@ config.module.rules.push({
             useBuiltIns: true // we polyfill Object.assign in src/normalize.js
           },
         ],
+        ['import', { libraryName: 'antd', style: 'css' }] // 按需加载antd库
       ],
       presets: [
         'babel-preset-react',
@@ -97,7 +98,7 @@ const extractStyles = new ExtractTextPlugin({
 })
 
 config.module.rules.push({
-  test: /\.(sass|scss)$/,
+  test: /\.(css|less)$/,
   loader: extractStyles.extract({
     fallback: 'style-loader',
     use: [
@@ -123,7 +124,7 @@ config.module.rules.push({
         },
       },
       {
-        loader: 'sass-loader',
+        loader: 'less-loader',
         options: {
           sourceMap: project.sourcemaps,
           includePaths: [

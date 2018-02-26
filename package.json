@@ -20,6 +20,8 @@
   "author": "David Zukowski <david@zuko.me> (http://zuko.me)",
   "license": "MIT",
   "dependencies": {
+    "antd": "^3.2.2",
+    "babel-plugin-import": "^1.6.5",
     "bootstrap": "^4.0.0-alpha",
     "compression": "^1.6.2",
     "express": "^4.14.0",
@@ -36,6 +38,7 @@
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
+    "antd": "^3.2.2",
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.0.0",
@@ -76,6 +79,8 @@
     "karma-mocha-reporter": "^2.2.1",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack-with-fast-source-maps": "^1.10.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.0.5",
     "mocha": "^3.2.0",
     "node-sass": "^4.5.3",
     "phantomjs-prebuilt": "^2.1.14",
@@ -83,7 +88,6 @@
     "react-test-renderer": "^15.5.4",
     "redux-logger": "^3.0.6",
     "rimraf": "^2.6.1",
-    "sass-loader": "^6.0.5",
     "sinon": "^2.2.0",
     "sinon-chai": "^2.10.0",
     "style-loader": "^0.17.0",
